@@ -1,8 +1,15 @@
 <div class="container">
-  <h1>{{title}}</h1>
-  <nav>
+
+  <div class="header">
+    <h1>{{title}}</h1>
+    <h3>{{subtitle | titlecase}}</h3>
+  </div>
+
+  <app-navbar></app-navbar>
+
+  <!-- <nav>
     <a routerLink="/heroes">Heroes</a>
-  </nav>
-  <router-outlet></router-outlet>
+  </nav> -->
+  <!-- <router-outlet></router-outlet> -->
   <app-heroes></app-heroes>
 </div>

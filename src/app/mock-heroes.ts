@@ -1,13 +1,58 @@
 import { Hero } from './Hero';
 
 export const HEROES: Hero[] = [
-  { id: 1, name: 'Shadow Fiend' },
-  { id: 2, name: 'Phantom Lancer' },
-  { id: 3, name: 'Ursa' },
-  { id: 4, name: 'Invoker' },
-  { id: 5, name: 'Phantom Assassin' },
-  { id: 6, name: 'Timber Saw' },
-  { id: 7, name: 'Tinker' },
-  { id: 8, name: 'Wind Ranger' },
-  { id: 9, name: 'Axe' },
+  {
+    id: 1,
+    name: 'ABADDON',
+    image: "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/abaddon.png",
+    type: "STRENGTH"
+  },
+  {
+    id: 2,
+    name: 'ALCHEMIST',
+    image: "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/alchemist.png",
+    type: "STRENGTH"
+  },
+   {
+    id: 2,
+    name: 'ANCIENT APPARITION',
+    image: "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/ancient_apparition.png",
+    type: "INTELLIGENCE"
+  },
+   {
+    id: 1,
+    name: 'ABADDON',
+    image: "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/abaddon.png",
+    type: "STRENGTH"
+  },
+  {
+    id: 2,
+    name: 'ALCHEMIST',
+    image: "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/alchemist.png",
+    type: "STRENGTH"
+  },
+   {
+    id: 2,
+    name: 'ANCIENT APPARITION',
+    image: "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/ancient_apparition.png",
+    type: "INTELLIGENCE"
+  },
+   {
+    id: 1,
+    name: 'ABADDON',
+    image: "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/abaddon.png",
+    type: "STRENGTH"
+  },
+  {
+    id: 2,
+    name: 'ALCHEMIST',
+    image: "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/alchemist.png",
+    type: "STRENGTH"
+  },
+   {
+    id: 2,
+    name: 'ANCIENT APPARITION',
+    image: "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/ancient_apparition.png",
+    type: "INTELLIGENCE"
+  },
 ];

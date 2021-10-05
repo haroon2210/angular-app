@@ -1,9 +1,13 @@
 .container {
-  /*background: url("https://wallpaperaccess.com/full/1290999.jpg") no-repeat center center fixed;*/
-  /*-webkit-background-size: cover;*/
-  /*-moz-background-size: cover;*/
-  /*-o-background-size: cover;*/
-  /*background-size: cover;*/
   padding: 2% 5%;
-  height: 100%;
+}
+
+h1, h3 {
+  text-align: center;
+}
+
+h1 {
+  font-weight: 1000;
+  font-size: 50px;
+  line-height: 1px;
 }

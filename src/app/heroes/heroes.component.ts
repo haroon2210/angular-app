@@ -25,13 +25,15 @@ export class HeroesComponent implements OnInit {
 
   heroes :Hero[] = [];
 
-  selectedHero : Hero = {
-    id: 1,
-    name: "Windstorm"
-  }
+  selectedHero: Hero = {
+    id: 99,
+    name: "awd",
+    image: 'adw',
+    type: "w"
+  };
 
   onSelect(hero: Hero): void {
-    this.selectedHero = {...hero};
+    // this.selectedHero = {...hero};
   }
 
 }
