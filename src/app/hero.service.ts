@@ -20,7 +20,7 @@ export class HeroService {
     return of(this.HEROES.filter(hero => hero.type === type));
   }
 
-  getHero(name: string): Hero {
+  getHero(name: string | null): Hero {
     this.getHeroes('*')
     for (let i = 0; i < this.HEROES.length ; i++) {
       if (this.HEROES[i].name == name) return this.HEROES[i];

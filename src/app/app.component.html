@@ -1,11 +1,11 @@
 <div class="container">
 
-  <div class="header" *ngIf="router !== '/detail'">
+  <div class="header" *ngIf="router ? !router.includes('/detail') : false">
     <h1 routerLink="">{{title}}</h1>
     <h3>{{subtitle | titlecase}}</h3>
   </div>
 
-  <app-navbar *ngIf="router !== '/form' && router !== '/detail'"></app-navbar>
+  <app-navbar *ngIf="router !== '/form' && router && !router.includes('/detail')"></app-navbar>
   <router-outlet></router-outlet>
 
   <div class="new-btn-div" *ngIf="router == '/'">

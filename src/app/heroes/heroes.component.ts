@@ -11,7 +11,7 @@ import {ActivatedRoute} from "@angular/router";
 
 export class HeroesComponent implements OnInit {
 
-  constructor(private heroService: HeroService, private route: ActivatedRoute,) {
+  constructor(private heroService: HeroService, private route: ActivatedRoute) {
 
   }
 

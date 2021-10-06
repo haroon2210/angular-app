@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {Hero} from "../Hero";
 import {HeroService} from "../hero.service";
+import {ActivatedRoute} from "@angular/router";
 
 @Component({
   selector: 'app-detail',
@@ -9,12 +10,18 @@ import {HeroService} from "../hero.service";
 })
 export class DetailComponent implements OnInit {
 
-  // hero: Hero = undefined;
+  param: string | null = '';
+  hero: Hero = {
+    name: "",
+    image: "",
+    type: ""
+  };
 
-  constructor(private heroService: HeroService) { }
+  constructor(private heroService: HeroService, private route: ActivatedRoute) { }
 
   ngOnInit(): void {
-
+    this.param = this.route.snapshot.paramMap.get("hero");
+    this.hero = this.heroService.getHero(this.param);
   }
 
 }
