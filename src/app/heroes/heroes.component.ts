@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {Hero} from "../Hero";
-import {HEROES} from "../mock-heroes";
 import {HeroService} from "../hero.service";
+import {ActivatedRoute} from "@angular/router";
 
 @Component({
   selector: 'app-heroes',
@@ -11,26 +11,22 @@ import {HeroService} from "../hero.service";
 
 export class HeroesComponent implements OnInit {
 
-  constructor(private heroService: HeroService) {
+  constructor(private heroService: HeroService, private route: ActivatedRoute,) {
 
   }
 
+  heroType: string = "*";
+
   ngOnInit(): void {
+    this.route.data.subscribe(res => this.heroType = res.type)
     this.getHeroes();
   }
 
   getHeroes(): void {
-    this.heroService.getHeroes().subscribe(heroes => this.heroes = heroes)
+    this.heroService.getHeroes(this.heroType).subscribe(heroes => this.heroes = heroes)
   }
 
   heroes :Hero[] = [];
-
-  selectedHero: Hero = {
-    id: 99,
-    name: "awd",
-    image: 'adw',
-    type: "w"
-  };
 
   onSelect(hero: Hero): void {
     // this.selectedHero = {...hero};

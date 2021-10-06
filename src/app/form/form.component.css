@@ -1,0 +1,30 @@
+input {
+  color: #333333;
+  outline: none;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+}
+
+#btn {
+  width: 197px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: ease-in-out;
+  transition-duration: 0.3s;
+}
+
+#btn:hover {
+  -webkit-box-shadow: 0 0 10px #e81515;
+  box-shadow: 0 0 10px #e61515;
+  background-color: #3b0404;
+  color: white;
+}
+
+.container {
+  margin: 50px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
